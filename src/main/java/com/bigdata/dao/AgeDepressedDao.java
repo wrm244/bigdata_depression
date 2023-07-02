@@ -20,6 +20,6 @@ public interface AgeDepressedDao {
      *
      * @return {@code List<Map<String,AgeDepressed>>}
      */
-    @Select("select HDI,total_depressed as depressedNo from age_depressed")
+    @Select("select age,total_depressed as depressedNo from age_depressed")
     List<Map<String,AgeDepressed>> selectAll();
 }

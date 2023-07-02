@@ -1,6 +1,5 @@
 package com.bigdata;
 
-import com.bigdata.domain.AgeDepressed;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

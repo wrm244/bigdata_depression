@@ -23,7 +23,7 @@ public class AllHeaders {
    private Integer population;
    private Double depressedPerHundredKPop;
    private String countryYear;
-   private Double HdiForYear;
+   private Double hdiForYear;
    private Long gdpForYear;
    private Integer gdpPerCapita;
    private  String generation;

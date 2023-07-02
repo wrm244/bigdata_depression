@@ -29,7 +29,7 @@ public class AgeDepressedController {
      * @return {@code Result}
      */
     @GetMapping
-    Result ageDepressedSelectAll(){
+    Result ageDepressedSelectAll() {
         List<Map<String,AgeDepressed>> ageDepressedList = ageDepressedService.selectAll();
         Integer code = ageDepressedList != null ? Code.GET_OK : Code.GET_ERR;
         String msg = ageDepressedList != null ? "" : "ageDepressed数据查询失败，请重试！";

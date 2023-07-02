@@ -56,8 +56,17 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
-    </dependencies>
 
+    </dependencies>
+    <!-- omitted xml -->
+    <distributionManagement>
+        <repository>
+            <!--必须与 settings.xml 的 id 一致-->
+            <id>guetbigdata-depression-demo</id>
+            <name>demo</name>
+            <url>https://guetbigdata-maven.pkg.coding.net/repository/depression/demo/</url>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>

@@ -9,6 +9,6 @@ import java.util.List;
 import java.util.Map;
 @Mapper
 public interface HdiDepressedDao {
-    @Select("select HDI as HdiForYear,total_depressed as depressedNo from hdi_depressed")
+    @Select("select HDI as hdiForYear,total_depressed as depressedNo from hdi_depressed")
     List<Map<String, HdiDepressed>> selectAll();
 }

@@ -8,10 +8,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+
 @Service
 public class AgeDepressedServiceImpl implements AgeDepressedService {
     @Autowired
     private AgeDepressedDao ageDepressedDao;
+
     @Override
     public List<Map<String, AgeDepressed>> selectAll() {
         return ageDepressedDao.selectAll();

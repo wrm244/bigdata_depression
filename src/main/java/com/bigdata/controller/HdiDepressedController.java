@@ -15,6 +15,7 @@ import java.util.Map;
 public class HdiDepressedController {
     @Autowired
     private HdiDepressedServiceImpl hdiDepressedService;
+
     @GetMapping
     Result hdiDepressedSelectAll() {
         List<Map<String, HdiDepressed>>  hdiDepressedList = hdiDepressedService.selectAll();

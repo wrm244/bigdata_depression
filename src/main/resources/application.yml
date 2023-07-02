@@ -1,0 +1,10 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://guet.gxist.cn:3306/depression_db
+    username: root
+    password: 562mmNRTntGrzF8C
+    type: com.alibaba.druid.pool.DruidDataSource

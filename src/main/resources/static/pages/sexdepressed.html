@@ -18,11 +18,13 @@
         var myChart = echarts.init(chartDom);
 
         $.getJSON("/api/sex-depressed",function(values) {
-            var xdata=[]
+            var xdata=[];
             for(var i=0;i<values["data"].length;i++){
-                xdata.push(values["data"][i]);
+                //重写JSON表单格式
+                var arr = {"name":values["data"][i]["sex"],"value":values["data"][i]["depressedSex"]};
+                xdata.push(arr);
             }
-            xdata[1]
+            console.log(xdata);
         var option;
 
         option = {

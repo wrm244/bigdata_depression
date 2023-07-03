@@ -18,7 +18,7 @@ import java.util.Map;
  * @date 2023/07/02 23:34
  */
 @RestController
-@RequestMapping("/api/ageDepressed")
+@RequestMapping("/api/age-depressed")
 public class AgeDepressedController {
     @Autowired
     private AgeDepressedService ageDepressedService;

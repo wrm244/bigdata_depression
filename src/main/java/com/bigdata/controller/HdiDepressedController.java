@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/hdiDepressed")
+@RequestMapping("/api/hdi-depressed")
 public class HdiDepressedController {
     @Autowired
     private HdiDepressedServiceImpl hdiDepressedService;

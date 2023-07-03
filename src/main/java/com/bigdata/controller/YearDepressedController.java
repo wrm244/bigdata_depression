@@ -20,7 +20,6 @@ import java.util.Map;
  * @date 2023/07/03 12:30
  */
 
-
 @RestController
 @RequestMapping("/api/year-depressed")
 public class YearDepressedController {

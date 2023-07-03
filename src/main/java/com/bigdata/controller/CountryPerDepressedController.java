@@ -20,7 +20,7 @@ import java.util.Map;
  * @date 2023/07/03 13:55
  */
 @RestController
-@RequestMapping("/api/country-perDepressed")
+@RequestMapping("/api/country-depressed-per")
 public class CountryPerDepressedController {
     @Autowired
     private CountryPerDepressedSerive countryPerDepressedSerive;

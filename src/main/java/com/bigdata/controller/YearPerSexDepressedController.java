@@ -16,10 +16,9 @@ public class YearPerSexDepressedController {
     @Autowired
     private YearPerSexDepressedServiceImpl yearPerSexDepressedService;
 
-    @GetMapping(value = "/{sex}")
-    public Result SelectAll(@PathVariable("sex") String sex) {
+    @GetMapping
+    public Result SelectAll(@RequestParam("sex") String sex) {
         if (sex.equals("male")) {
-            System.out.println("1111");
             List<Map<String, YearPerSexDepressed>> yearPerSexDepressedList = yearPerSexDepressedService.selectMale();
             Integer code = yearPerSexDepressedList != null ? Code.GET_OK : Code.GET_ERR;
             String msg = yearPerSexDepressedList != null ? "" : "yearPerSexDepressed-male数据查询失败，请重试！";

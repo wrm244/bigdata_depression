@@ -16,11 +16,18 @@
 
         var chartDom = document.getElementById('main');
         var myChart = echarts.init(chartDom);
+
+        $.getJSON("/api/sex-depressed",function(values) {
+            var xdata=[]
+            for(var i=0;i<values["data"].length;i++){
+                xdata.push(values["data"][i]);
+            }
+            xdata[1]
         var option;
 
         option = {
             title: {
-                text: 'Referer of a Website',
+                text: 'Sex_depressed',
                 subtext: 'Fake Data',
                 left: 'center'
             },
@@ -36,13 +43,7 @@
                     name: 'Access From',
                     type: 'pie',
                     radius: '50%',
-                    data: [
-                        { value: 1048, name: 'Search Engine' },
-                        { value: 735, name: 'Direct' },
-                        { value: 580, name: 'Email' },
-                        { value: 484, name: 'Union Ads' },
-                        { value: 300, name: 'Video Ads' }
-                    ],
+                    data:xdata,
                     emphasis: {
                         itemStyle: {
                             shadowBlur: 10,
@@ -56,8 +57,7 @@
 
         option && myChart.setOption(option);
     })
+    })
 </script>
-
-
 </body>
 </html>

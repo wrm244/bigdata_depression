@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 人类发展指数与抑郁人数业务层实现类
+ * 每年每个国家每十万人中抑郁人数业务层实现类
  *
- * @author 吴河山
- * @date 2023/07/03 10:14
+ * @author zgs
+ * @date 2023/07/03 13:14
  */
 @Service
 public class YearCountryDepressedPerServiceImpl implements YearCountryDepressedPerService {

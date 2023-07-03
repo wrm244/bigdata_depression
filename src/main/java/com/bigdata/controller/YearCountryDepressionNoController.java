@@ -1,5 +1,6 @@
 package com.bigdata.controller;
 
+import com.bigdata.domain.YearCountryDepressionNo;
 import com.bigdata.service.impl.YearCountryDepressionNoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,14 +11,14 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/YearCountryDepressionNo")
-public class YearCountryDepressionNo {
+@RequestMapping("/api/year-country-depression-no")
+public class YearCountryDepressionNoController {
     @Autowired
     private YearCountryDepressionNoServiceImpl yearCountryDepressionNoService;
 
     @GetMapping
     Result yearCountryDepressedPerSelectAll() {
-        List<Map<String, com.bigdata.domain.YearCountryDepressionNo>> yearCountryDepressionNoList = yearCountryDepressionNoService.selectAll();
+        List<Map<String, YearCountryDepressionNo>> yearCountryDepressionNoList = yearCountryDepressionNoService.selectAll();
         Integer code = yearCountryDepressionNoList != null ? Code.GET_OK : Code.GET_ERR;
         String msg = yearCountryDepressionNoList != null ? "" : "yearCountryDepressionNo数据查询失败，请重试！";
         return new Result(code,yearCountryDepressionNoList,msg);

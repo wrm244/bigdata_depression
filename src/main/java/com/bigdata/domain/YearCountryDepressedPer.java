@@ -3,10 +3,10 @@ package com.bigdata.domain;
 import lombok.Data;
 
 /**
- * 人类发展指数与抑郁的关系封装属性，继承AllHeaders
+ * 每年每个国家每十万人中抑郁人数封装属性，继承AllHeaders
  *
- * @author 吴河山
- * @date 2023/07/03 10:13
+ * @author zgs
+ * @date 2023/07/03 12:34
  */
 @Data
 public class YearCountryDepressedPer extends AllHeaders {

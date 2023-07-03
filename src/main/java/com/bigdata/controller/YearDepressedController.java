@@ -14,11 +14,13 @@ import java.util.Map;
 
 
 /**
- *  时间与抑郁关系控制器
+ * 时间与抑郁关系控制器
  *
- * @author 吴河山
- * @date 2023/07/02 23:34
+ * @author chenshuang
+ * @date 2023/07/03 12:30
  */
+
+
 @RestController
 @RequestMapping("/api/year-depressed")
 public class YearDepressedController {
@@ -26,7 +28,7 @@ public class YearDepressedController {
     private YearDepressedService yearDepressedService;
 
     /**
-     * 年龄与抑郁api选择所有数据返回
+     * 时间与抑郁api选择所有数据返回
      *
      * @return {@code Result}
      */

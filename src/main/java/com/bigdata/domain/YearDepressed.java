@@ -2,11 +2,12 @@ package com.bigdata.domain;
 
 import lombok.Data;
 
+
 /**
- * 年龄段与抑郁的关系封装属性，继承AllHeaders
+ * 时间与抑郁的关系封装属性，继承AllHeaders
  *
- * @author 吴河山
- * @date 2023/07/03 10:12
+ * @author chenshuang
+ * @date 2023/07/03 12:31
  */
 @Data
 public class YearDepressed extends AllHeaders {

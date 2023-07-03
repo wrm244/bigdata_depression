@@ -1,6 +1,5 @@
 package com.bigdata.service;
 
-import com.bigdata.domain.AgeDepressed;
 import com.bigdata.domain.CountryPerDepressed;
 
 import java.util.List;

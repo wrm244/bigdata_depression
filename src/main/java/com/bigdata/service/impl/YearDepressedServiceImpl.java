@@ -1,10 +1,7 @@
 package com.bigdata.service.impl;
 
-import com.bigdata.dao.AgeDepressedDao;
 import com.bigdata.dao.YearDepressedDao;
-import com.bigdata.domain.AgeDepressed;
 import com.bigdata.domain.YearDepressed;
-import com.bigdata.service.AgeDepressedService;
 import com.bigdata.service.YearDepressedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

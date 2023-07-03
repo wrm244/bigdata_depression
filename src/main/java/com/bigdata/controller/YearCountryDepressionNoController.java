@@ -17,7 +17,7 @@ public class YearCountryDepressionNoController {
     private YearCountryDepressionNoService yearCountryDepressionNoService;
 
     @GetMapping
-    Result yearCountryDepressionNoSelectAll() {
+    Result yearCountryDepressedPerSelectAll() {
         List<Map<String, YearCountryDepressionNo>> yearCountryDepressionNoList = yearCountryDepressionNoService.selectAll();
         Integer code = yearCountryDepressionNoList != null ? Code.GET_OK : Code.GET_ERR;
         String msg = yearCountryDepressionNoList != null ? "" : "yearCountryDepressionNo数据查询失败，请重试！";

@@ -23,9 +23,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://server.gxist.cn:3306/depression_db
-    username: depression_db
-    password: N8ZDZ5ce8JpwZjsE
+    url: jdbc:mysql://localhost:3306/depression_db
+    username: root
+    password: 96da1b0a7e08769a
     type: com.alibaba.druid.pool.DruidDataSource
   config:
     activate:

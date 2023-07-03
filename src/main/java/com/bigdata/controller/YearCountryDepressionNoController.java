@@ -1,7 +1,7 @@
 package com.bigdata.controller;
 
 import com.bigdata.domain.YearCountryDepressionNo;
-import com.bigdata.service.impl.YearCountryDepressionNoServiceImpl;
+import com.bigdata.service.YearCountryDepressionNoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,7 @@ import java.util.Map;
 @RequestMapping("/api/year-country-depression-no")
 public class YearCountryDepressionNoController {
     @Autowired
-    private YearCountryDepressionNoServiceImpl yearCountryDepressionNoService;
+    private YearCountryDepressionNoService yearCountryDepressionNoService;
 
     @GetMapping
     Result yearCountryDepressedPerSelectAll() {

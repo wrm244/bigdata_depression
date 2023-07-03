@@ -1,5 +1,11 @@
 package com.bigdata.exception;
 
+/**
+ * 业务异常处理
+ *
+ * @author 吴河山
+ * @date 2023/07/03 10:13
+ */
 public class BusinessException extends RuntimeException {
     private Integer code;
 

@@ -1,5 +1,11 @@
 package com.bigdata.exception;
 
+/**
+ * 系统异常处理
+ *
+ * @author 吴河山
+ * @date 2023/07/03 10:14
+ */
 public class SystemException extends RuntimeException {
     private Integer code;
 

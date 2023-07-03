@@ -5,6 +5,12 @@ import com.bigdata.exception.SystemException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * 项目异常AOP处理
+ *
+ * @author 吴河山
+ * @date 2023/07/03 10:11
+ */
 @RestControllerAdvice
 public class ProjectExceptionAdvice {
         //@ExceptionHandler用于设置当前处理器类对应的异常类型

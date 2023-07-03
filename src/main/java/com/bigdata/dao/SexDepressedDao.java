@@ -1,6 +1,7 @@
 package com.bigdata.dao;
 
 import com.bigdata.domain.SexDepressed;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.Map;
  * @author 郭新蕾
  *
  */
-
+@Mapper
 public interface SexDepressedDao {
     /**
      * 选择所有

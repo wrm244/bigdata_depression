@@ -25,7 +25,7 @@ public class SexDepressedController {
     private SexDepressedService sexDepressedService;
 
     /**
-     * 年龄与抑郁api选择所有数据返回
+     * 性别与抑郁api选择所有数据返回
      *
      * @return {@code Result}
      */

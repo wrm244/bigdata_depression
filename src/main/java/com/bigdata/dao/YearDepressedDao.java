@@ -1,6 +1,5 @@
 package com.bigdata.dao;
 
-import com.bigdata.domain.AgeDepressed;
 import com.bigdata.domain.YearDepressed;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;

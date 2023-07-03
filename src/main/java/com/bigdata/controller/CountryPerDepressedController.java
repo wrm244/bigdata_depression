@@ -1,8 +1,6 @@
 package com.bigdata.controller;
 
-import com.bigdata.domain.AgeDepressed;
 import com.bigdata.domain.CountryPerDepressed;
-import com.bigdata.service.AgeDepressedService;
 import com.bigdata.service.CountryPerDepressedSerive;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

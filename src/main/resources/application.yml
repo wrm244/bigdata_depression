@@ -1,5 +1,10 @@
+spring:
+  profiles:
+    active: dev
+
+---
 server:
-  port: 8082
+  port: 80
 
 spring:
   datasource:
@@ -8,3 +13,20 @@ spring:
     username: root
     password: 562mmNRTntGrzF8C
     type: com.alibaba.druid.pool.DruidDataSource
+  config:
+    activate:
+      on-profile: dev
+---
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://server.gxist.cn:3306/depression_db
+    username: depression_db
+    password: N8ZDZ5ce8JpwZjsE
+    type: com.alibaba.druid.pool.DruidDataSource
+  config:
+    activate:
+      on-profile: pro

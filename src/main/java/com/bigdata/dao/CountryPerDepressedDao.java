@@ -21,6 +21,6 @@ public interface CountryPerDepressedDao {
      *
      * @return {@code List<Map<String,CountryPerDepressed>>}
      */
-    @Select("select country,average_depression_ratio as average_depression_ratio from countries_per_depression order by average_depression_ratio desc")
+    @Select("select country,(average_depression_ratio/10) as average_depression_ratio from countries_per_depression order by average_depression_ratio desc")
     List<Map<String, CountryPerDepressed>> selectAll();
 }

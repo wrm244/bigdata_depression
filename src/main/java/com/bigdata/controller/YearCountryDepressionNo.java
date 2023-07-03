@@ -19,7 +19,7 @@ public class YearCountryDepressionNo {
     Result yearCountryDepressedPerSelectAll() {
         List<Map<String, com.bigdata.domain.YearCountryDepressionNo>> yearCountryDepressionNoList = yearCountryDepressionNoService.selectAll();
         Integer code = yearCountryDepressionNoList != null ? Code.GET_OK : Code.GET_ERR;
-        String msg = yearCountryDepressionNoList != null ? "" : "yearCountryDepressedPer数据查询失败，请重试！";
+        String msg = yearCountryDepressionNoList != null ? "" : "yearCountryDepressionNo数据查询失败，请重试！";
         return new Result(code,yearCountryDepressionNoList,msg);
     }
 }

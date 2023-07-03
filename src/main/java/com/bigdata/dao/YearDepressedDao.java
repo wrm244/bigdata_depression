@@ -8,11 +8,12 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 import java.util.Map;
 
+
 /**
- * 年龄与抑郁关系数据持久类
+ * 时间与抑郁症人数数据持久类
  *
- * @author
- * @date 2023/07/02 23:40
+ * @author chenshuang
+ * @date 2023/07/03 12:26
  */
 @Mapper
 public interface YearDepressedDao {

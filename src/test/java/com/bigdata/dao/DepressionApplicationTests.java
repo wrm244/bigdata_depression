@@ -1,4 +1,4 @@
-package com.bigdata;
+package com.bigdata.dao;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

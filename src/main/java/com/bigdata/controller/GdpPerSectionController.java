@@ -3,6 +3,7 @@ import com.bigdata.dao.GdpPerSectionDao;
 import com.bigdata.domain.GdpPerSection;
 import com.bigdata.domain.HdiDepressed;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/gdp-per-section")
+@CrossOrigin(origins = {"*"})
 public class GdpPerSectionController {
     @Autowired
     private GdpPerSectionDao gdpPerSectionDao;

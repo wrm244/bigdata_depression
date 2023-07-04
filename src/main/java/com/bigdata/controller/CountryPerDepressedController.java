@@ -3,6 +3,7 @@ package com.bigdata.controller;
 import com.bigdata.domain.CountryPerDepressed;
 import com.bigdata.service.CountryPerDepressedSerive;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/country-depressed-per")
+@CrossOrigin(origins = {"*"})
 public class CountryPerDepressedController {
     @Autowired
     private CountryPerDepressedSerive countryPerDepressedSerive;

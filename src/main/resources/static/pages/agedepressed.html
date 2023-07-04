@@ -16,7 +16,7 @@
     $(function () {
         var chartDom = document.getElementById('main');
         var myChart = echarts.init(chartDom);
-        $.getJSON("/api/age-depressed",function(values) {
+        $.getJSON("https://bdapi.gxist.cn/api/age-depressed",function(values) {
             var xdata=[]
             var ydata=[]
             for(var i=0;i<values["data"].length;i++){

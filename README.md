@@ -7,7 +7,15 @@ Base URLs:
 
 * 测试环境: ``http://localhost``
 * 正式环境: ``https://bdapi.gxist.cn``
-  
+
+## 前端页面截图([前端代码仓库](https://github.com/wrm244/depression_demo/))
+
+![image](https://github.com/wrm244/depression_demo/assets/54385511/ea97d683-dc4f-47f6-85b1-88e48366e15f)
+
+![image](https://github.com/wrm244/depression_demo/assets/54385511/a3768e53-c0a6-484b-88be-ae40b78577bf)
+
+![image](https://github.com/wrm244/depression_demo/assets/54385511/bdbb6573-cd6a-4bb3-813e-b5859c5ee754)
+
 ## 贡献者(大数据小组01)
 
 <table>
